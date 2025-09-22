@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edgar Chan</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1f1f1f;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #90caf9;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Edgar Chan</h1>
+  </header>
+
+  <section>
+    <h2>My Goal After High School</h2>
+    <p>I want to study <strong>Biology</strong> because I’m passionate about understanding life, health, and how the human body works.</p>
+  </section>
+
+  <section>
+    <h2>Unit 1 & 2 Vocabulary</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Bit</h3>
+        <p>A binary digit, either 0 or 1.</p>
+      </div>
+      <div class="card">
+        <h3>Byte</h3>
+        <p>A sequence of 8 bits.</p>
+      </div>
+      <div class="card">
+        <h3>Roundoff</h3>
+        <p>Error that results when the number of bits is not enough to represent the number with full precision.</p>
+      </div>
+      <div class="card">
+        <h3>Analog Data</h3>
+        <p>Values that change smoothly over time, like pitch or volume in a live concert.</p>
+      </div>
+      <div class="card">
+        <h3>Lossless</h3>
+        <p>Compression that preserves all data and allows full recovery of the original.</p>
+      </div>
+      <div class="card">
+        <h3>Lossy</h3>
+        <p>Compression that discards some data and makes it impossible to recover the original.</p>
+      </div>
+      <div class="card">
+        <h3>Metadata</h3>
+        <p>Data about data, like descriptive info about a file or database row.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Images</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Binary_code.png" alt="Binary code example">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Sound_wave_comparison.png" alt="Analog vs digital sound waves">
+  </section>
+
+  <section>
+    <h2>Video: How the Internet Works</h2>
+    <iframe src="https://www.youtube.com/embed/AEaKrq3SpW8" allowfullscreen></iframe>
+  </section>
+</body>
+</html>
