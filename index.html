@@ -1,280 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Edgar Chan</title>
+  <meta charset="UTF-8">
+  <title>Edgar Chan - Future in Biology</title>
   <style>
-    :root{
-      --bg:#0b0c0d;
-      --panel:#151617;
-      --muted:#9aa4ad;
-      --accent:#90caf9;
-      --card:#15171a;
-      --glass: rgba(255,255,255,0.02);
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    html,body{height:100%; margin:0;}
-    body{
-      background:var(--bg);
-      color:#e6eef6;
-      font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
+    header {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      border-bottom: 2px solid #333;
     }
-
-    header{
-      text-align:center;
-      padding:56px 20px 36px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
-      border-bottom:1px solid rgba(255,255,255,0.02);
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
-    header h1{
-      margin:0;
-      font-size:3rem;
-      letter-spacing: -0.02em;
-      color:#fff;
-      font-weight:700;
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
     }
-    main{
-      max-width:1100px;
-      margin:32px auto;
-      padding:0 20px 80px;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
     }
-    section{
-      margin-bottom:36px;
-      background: transparent;
+    .card {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
     }
-    section > h2{
-      margin:0 0 12px;
-      font-size:1.25rem;
-      color:var(--accent);
-      border-bottom:1px solid rgba(255,255,255,0.04);
-      padding-bottom:8px;
+    .card h3 {
+      margin-top: 0;
+      color: #00bcd4;
     }
-    .lead{
-      color:var(--muted);
-      margin:10px 0 18px;
+    .media {
+      text-align: center;
+      margin-top: 1.5rem;
     }
-
-    /* Cards grid */
-    .cards{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap:14px;
+    svg {
+      width: 200px;
+      height: auto;
+      margin-top: 1rem;
     }
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03));
-      border: 1px solid rgba(255,255,255,0.03);
-      padding:14px;
-      border-radius:10px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.45);
-      min-height:82px;
-    }
-    .card h3{
-      margin:0 0 6px;
-      font-size:1rem;
-      color:var(--accent);
-    }
-    .card p{
-      margin:0;
-      color:var(--muted);
-      font-size:0.95rem;
-    }
-
-    /* Images */
-    .images{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:18px;
-      margin-top:12px;
-    }
-    figure{
-      margin:0;
-      background:var(--card);
-      padding:12px;
-      border-radius:10px;
-      border:1px solid rgba(255,255,255,0.02);
-    }
-    figcaption{
-      margin-top:8px;
-      color:var(--muted);
-      font-size:0.9rem;
-      text-align:center;
-    }
-    .svg-illustration{
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius:8px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
-    }
-
-    /* Video */
-    .video-wrap{
-      margin-top:10px;
-      border-radius:10px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,0.02);
-    }
-    iframe{
-      width:100%;
-      height:420px;
-      display:block;
-      border:0;
-      background:#000;
-    }
-
-    /* Responsive tweaks */
-    @media (max-width:780px){
-      header h1{ font-size:2.25rem; }
-      .images{ grid-template-columns: 1fr; }
-      iframe{ height:300px; }
+    video {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Edgar Chan</h1>
-  </header>
+  <header>Edgar Chan</header>
 
-  <main>
-    <section aria-labelledby="goal">
-      <h2 id="goal">My Goal After High School</h2>
-      <p class="lead">I want to study <strong>Biology</strong> because I’m passionate about understanding life, health, and how the human body works.</p>
-    </section>
+  <section>
+    <h2>My Future Plans</h2>
+    <p>I want to study biology after high school to explore the science of life and how it connects to human health.</p>
+  </section>
 
-    <section aria-labelledby="unit1">
-      <h2 id="unit1">Unit 1 — Data & Representation (Vocabulary)</h2>
-      <p class="lead">Key terms about how information is represented and stored digitally.</p>
+  <section>
+    <h2>Unit 1 Vocabulary</h2>
+    <div class="cards">
+      <div class="card"><h3>Bit</h3><p>A binary digit, either 0 or 1.</p></div>
+      <div class="card"><h3>Byte</h3><p>A sequence of 8 bits.</p></div>
+      <div class="card"><h3>Roundoff</h3><p>Error from not enough bits to represent a number with full precision.</p></div>
+      <div class="card"><h3>Analog Data</h3><p>Values that change smoothly, like pitch or volume.</p></div>
+      <div class="card"><h3>Lossless</h3><p>Compression that preserves all original data.</p></div>
+      <div class="card"><h3>Lossy</h3><p>Compression that discards some data permanently.</p></div>
+      <div class="card"><h3>Metadata</h3><p>Data about data, like file information.</p></div>
+    </div>
+    <div class="media">
+      <h3>Visual Representation</h3>
+      <!-- Inline SVG for binary data -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <rect width="64" height="64" fill="#1e1e1e"/>
+        <text x="10" y="20" font-size="14" fill="#00bcd4">01001011</text>
+        <text x="10" y="40" font-size="14" fill="#00bcd4">10101001</text>
+        <text x="10" y="60" font-size="14" fill="#00bcd4">11001100</text>
+      </svg>
+    </div>
+  </section>
 
-      <div class="cards">
-        <div class="card"><h3>Bit</h3><p>A binary digit, either 0 or 1.</p></div>
-        <div class="card"><h3>Byte</h3><p>A sequence of 8 bits.</p></div>
-        <div class="card"><h3>Roundoff</h3><p>Error that results when the number of bits is not enough to represent the number with full precision (for example, using 3 digits to represent π as 3.14).</p></div>
-        <div class="card"><h3>Analog data</h3><p>Values that change smoothly, rather than in discrete intervals, over time. For example, the pitch and volume of a live concert.</p></div>
-        <div class="card"><h3>Lossless</h3><p>Compressing data in a way that preserves all data and allows full recovery of the original.</p></div>
-        <div class="card"><h3>Lossy</h3><p>Compressing data in a way that discards some data and makes it impossible to recover the original.</p></div>
-        <div class="card"><h3>Metadata</h3><p>Data about data, like descriptive information about a file or a row in a database.</p></div>
-      </div>
-    </section>
+  <section>
+    <h2>Unit 2 Vocabulary</h2>
+    <div class="cards">
+      <div class="card"><h3>Computing Device</h3><p>A physical device that can run a program.</p></div>
+      <div class="card"><h3>Computer Network</h3><p>A group of devices that can send/receive data.</p></div>
+      <div class="card"><h3>Path</h3><p>The series of connections between devices in a network.</p></div>
+      <div class="card"><h3>Protocol</h3><p>Rules that specify how systems communicate.</p></div>
+      <div class="card"><h3>Fault Tolerant</h3><p>System can function even if parts fail.</p></div>
+      <div class="card"><h3>Scalability</h3><p>Ability of a system to expand or contract to meet demand.</p></div>
+      <div class="card"><h3>Bandwidth</h3><p>Max transmission capacity, measured in bit rate.</p></div>
+      <div class="card"><h3>URL</h3><p>A human-readable web address.</p></div>
+      <div class="card"><h3>Packets</h3><p>Small chunks of data messages are split into for transfer.</p></div>
+      <div class="card"><h3>Routers</h3><p>Specialized computers that forward data across networks.</p></div>
+      <div class="card"><h3>DNS</h3><p>Translates domain names to IP addresses.</p></div>
+      <div class="card"><h3>HTTP</h3><p>Used for transmitting and requesting web pages/media.</p></div>
+    </div>
+    <div class="media">
+      <h3>Visual Representation</h3>
+      <!-- Inline SVG for network diagram -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+        <circle cx="20" cy="30" r="6" fill="#00bcd4"/>
+        <circle cx="50" cy="10" r="6" fill="#00bcd4"/>
+        <circle cx="50" cy="50" r="6" fill="#00bcd4"/>
+        <circle cx="80" cy="30" r="6" fill="#00bcd4"/>
+        <line x1="20" y1="30" x2="50" y2="10" stroke="#f5f5f5" stroke-width="2"/>
+        <line x1="20" y1="30" x2="50" y2="50" stroke="#f5f5f5" stroke-width="2"/>
+        <line x1="50" y1="10" x2="80" y2="30" stroke="#f5f5f5" stroke-width="2"/>
+        <line x1="50" y1="50" x2="80" y2="30" stroke="#f5f5f5" stroke-width="2"/>
+      </svg>
+    </div>
+  </section>
 
-    <section aria-labelledby="unit2">
-      <h2 id="unit2">Unit 2 — Computer Systems & Networks (Vocabulary)</h2>
-      <p class="lead">Terms that describe devices, networking, protocols, and how the internet routes data.</p>
+  <section>
+    <h2>How the Internet Works</h2>
+    <div class="media">
+      <video controls>
+        <source src="https://archive.org/download/how-the-internet-works-video/how-the-internet-works-video.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </div>
+  </section>
 
-      <div class="cards">
-        <div class="card"><h3>Computing Device</h3><p>A physical device that can run a program (e.g., computer, smartphone, smart sensor).</p></div>
-        <div class="card"><h3>Computer Network</h3><p>A group of interconnected computing devices capable of sending or receiving data.</p></div>
-        <div class="card"><h3>Path</h3><p>The series of connections between computing devices on a network, starting with the sender and ending with the receiver.</p></div>
-        <div class="card"><h3>Protocol</h3><p>An agreed-upon set of rules that specify how systems behave and communicate.</p></div>
-        <div class="card"><h3>Fault Tolerant</h3><p>A system’s ability to continue functioning even if individual components fail.</p></div>
-        <div class="card"><h3>Scalability</h3><p>The ability of a system to expand or contract to meet new demands.</p></div>
-        <div class="card"><h3>Bandwidth</h3><p>The maximum transmission capacity of a system, measured by bit rate (bits per second).</p></div>
-        <div class="card"><h3>URL</h3><p>An easy-to-remember web address (e.g., www.example.com).</p></div>
-        <div class="card"><h3>Physical Network</h3><p>The hardware and physical connections that carry internet signals.</p></div>
-        <div class="card"><h3>Internet Protocol (IP)</h3><p>Assigns unique IP addresses to devices and determines how data is routed between them.</p></div>
-        <div class="card"><h3>Transmission Control Protocol (TCP)</h3><p>Ensures reliable, ordered, and error-checked delivery of data packets.</p></div>
-        <div class="card"><h3>User Datagram Protocol (UDP)</h3><p>A lightweight alternative to TCP with minimal error-checking (faster but less reliable).</p></div>
-        <div class="card"><h3>Packets</h3><p>Small chunks of data into which larger messages are divided for transmission. Packets may arrive in order, out-of-order, or not at all.</p></div>
-        <div class="card"><h3>Routers</h3><p>Specialized computers that forward data across networks, choosing the fastest available path.</p></div>
-        <div class="card"><h3>Domain Name System (DNS)</h3><p>Translates human-readable domain names (like example.com) into IP addresses.</p></div>
-        <div class="card"><h3>Hypertext Transfer Protocol (HTTP)</h3><p>Used for transmitting and requesting web pages and media on the World Wide Web.</p></div>
-        <div class="card"><h3>World Wide Web (WWW)</h3><p>A system of linked pages, media, and files browsable over HTTP.</p></div>
-        <div class="card"><h3>IP Addressing</h3><p>IPv4 uses 32-bit addresses → 2<sup>32</sup> = 4,294,967,296 unique addresses. Adding 16 more bits (IPv6) increases the address space by 2<sup>16</sup> = 65,536 times.</p></div>
-      </div>
-    </section>
-
-    <section aria-labelledby="images">
-      <h2 id="images">Images</h2>
-      <p class="lead"> Unit 1 (bits/bytes) and Unit 2 (network structure).</p>
-
-      <div class="images" role="list">
-        <!-- Unit 1 illustration (bits & bytes) -->
-        <figure role="listitem" aria-labelledby="fig1">
-          <!-- inline SVG: binary stream with a "BYTE" label -->
-          <svg class="svg-illustration" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig1title">
-            <title id="fig1title">Binary stream and byte block</title>
-            <rect width="100%" height="100%" fill="#071017"/>
-            <g font-family="monospace" font-size="20" fill="#8fd3ff" opacity="0.95">
-              <text x="24" y="46">10101010101100100110011001011010 111000101010101001</text>
-              <text x="24" y="86">01010010101011110000110101010011 100110101010011001</text>
-              <text x="24" y="126">11001100110011001100110011001100 001100110011001100</text>
-              <text x="24" y="166">00110011001100111100001111000011 101010101010101010</text>
-            </g>
-
-            <!-- byte box on the right -->
-            <g transform="translate(520,50)">
-              <rect x="0" y="0" rx="12" ry="12" width="250" height="140" fill="#0f1720" stroke="#274156" stroke-width="2"/>
-              <g transform="translate(130,70)">
-                <rect x="-56" y="-38" width="112" height="76" rx="8" fill="#11161a" stroke="#2a6f9a" stroke-width="2"/>
-                <text x="0" y="8" fill="#90caf9" text-anchor="middle" font-size="20" font-family="Arial, sans-serif">BYTE</text>
-              </g>
-            </g>
-          </svg>
-          <figcaption id="fig1">Unit 1: Binary stream & a byte (8 bits).</figcaption>
-        </figure>
-
-        <!-- Unit 2 illustration (network diagram) -->
-        <figure role="listitem" aria-labelledby="fig2">
-          <!-- inline SVG: simple network with devices, routers, cloud -->
-          <svg class="svg-illustration" viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig2title">
-            <title id="fig2title">Computer network diagram showing devices, routers, and internet</title>
-            <rect width="100%" height="100%" fill="#071017"/>
-
-            <!-- connections -->
-            <g stroke="#5fa6d6" stroke-width="2" stroke-opacity="0.6" fill="none">
-              <line x1="130" y1="230" x2="300" y2="130" />
-              <line x1="130" y1="100" x2="300" y2="130" />
-              <line x1="300" y1="130" x2="460" y2="130" />
-              <line x1="300" y1="130" x2="460" y2="230" />
-              <line x1="460" y1="130" x2="680" y2="180" />
-              <line x1="460" y1="230" x2="680" y2="180" />
-            </g>
-
-            <!-- nodes / devices -->
-            <g stroke="#90caf9" stroke-width="2" fill="#0f1b22">
-              <circle cx="130" cy="100" r="28" />
-              <circle cx="130" cy="230" r="28" />
-              <rect x="270" y="100" width="60" height="60" rx="8" ry="8" />
-              <rect x="270" y="200" width="60" height="60" rx="8" ry="8" />
-              <circle cx="460" cy="130" r="28" />
-              <circle cx="460" cy="230" r="28" />
-              <g transform="translate(620,150)">
-                <ellipse cx="0" cy="0" rx="64" ry="42" fill="#0f1a22" stroke="#7fbaf0" stroke-width="2"/>
-                <!-- small cloud bump shapes -->
-                <path d="M-48 0 a20 20 0 0 1 20 -20 a28 28 0 0 1 36 20 a16 16 0 0 1 18 18" fill="none" stroke="#7fbaf0" stroke-width="1.6" stroke-opacity="0.6"/>
-              </g>
-            </g>
-
-            <!-- labels -->
-            <g fill="#dfeefc" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
-              <text x="130" y="106">Device</text>
-              <text x="130" y="236">Device</text>
-              <text x="300" y="140">Router</text>
-              <text x="300" y="240">Server</text>
-              <text x="460" y="140">Switch</text>
-              <text x="460" y="240">Router</text>
-              <text x="620" y="205" font-size="13">Internet (many paths)</text>
-            </g>
-          </svg>
-          <figcaption id="fig2">Unit 2: Network diagram — devices, routers, and multiple paths to the Internet.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section aria-labelledby="video">
-      <h2 id="video">Video: How the Internet Works</h2>
-      <p class="lead">Embedded explainer video — good high-level primer on packets, routing, and DNS.</p>
-      <div class="video-wrap" role="region" aria-label="How the Internet Works video">
-        <!-- reliable YouTube embed -->
-        <iframe src="https://www.youtube.com/embed/AEaKrq3SpW8" title="How the Internet Works" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <footer style="color:var(--muted); font-size:0.9rem; text-align:center; margin-top:30px;">
-      Built for a clean dark theme • Copy this file to your GitHub Pages repo as <code>index.html</code>
-    </footer>
-  </main>
+  <section>
+    <h2>Artificial Intelligence on the Internet – AI-powered search, recommendations</h2>
+    <p>
+      AI on the internet helps enhance the user experience through search engines powered by AI like Google, Microsoft Copilot, and Perplexity AI. 
+      It tries to understand what people are looking for online, and provides relevant, summarized answers instead of just providing links to make users understand quicker. 
+      It also tailors search results based on user preferences, past behavior, and even connected apps, leading to more customized interactions.
+    </p>
+    <div class="media">
+      <!-- Inline SVG for AI -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <rect x="20" y="20" width="60" height="60" rx="10" fill="#1e1e1e" stroke="#00bcd4" stroke-width="3"/>
+        <text x="50%" y="55%" text-anchor="middle" fill="#00bcd4" font-size="20" font-family="Arial" font-weight="bold">AI</text>
+        <circle cx="10" cy="50" r="5" fill="#00bcd4"/>
+        <circle cx="90" cy="50" r="5" fill="#00bcd4"/>
+        <line x1="20" y1="50" x2="10" y2="50" stroke="#00bcd4" stroke-width="2"/>
+        <line x1="80" y1="50" x2="90" y2="50" stroke="#00bcd4" stroke-width="2"/>
+      </svg>
+    </div>
+  </section>
 </body>
 </html>
